@@ -134,11 +134,34 @@ input{
 .banner-left{
 	width:234px;
 	height:100%;
-	background:rgba(0,0,0,0.8);
+	background:rgba(0,0,0,0.5);
 	position:absolute;
 	left:0;
 	top:0;
 	z-index: 2;
+}
+.banner-left ul{
+	width:100%;
+	height:420px;
+	margin-top:20px ;
+	box-sizing: border-box;
+}
+.banner-left .left-text{
+	width:100%;
+	height:42px;
+	line-height:42px;
+	color:#dfe1e3;
+}
+.left-text .small-text-left{
+	float:left;
+	width:100px;
+	height:42px;
+	margin-left:30px;
+}
+.left-text .small-text-right{
+	float:right;
+	width:50px;
+	height:42px;
 }
 .banner-right{
 	width:100%;
@@ -158,31 +181,51 @@ input{
 }
 .banner-point{
 	height:10px;
-	width:200px;
+	width:100px;
 	position:absolute;
-	right:0;
+	right:25px;
 	bottom:25px;
-	background: #000;
+}
+.banner-point div{
+	height:10px;
+	width:10px;
+	background:rgba(0,0,0,0.4);
+	float:left;
+	border-radius:50% ;
+	margin-left:10px;
+	border:2px solid rgba(161,170,179,0.4);
+	box-sizing: border-box;
+}
+.banner-point .point-box1{
+	background:#e6f4ff;
+	border:2px solid rgba(139,149,160,1)
 }
 .banner-arrows-left{
-	height:30px;
-	width:20px;
+	height:69px;
+	width:41px;
 	position: absolute;
 	top:0;
 	bottom:0;
 	margin:auto;
-	background: #000000;
 	right:0;
 }
+.banner-arrows-left>i{
+	font-size:32px;
+	margin-right:0 ;
+	color:#cdd9e3;
+}
 .banner-arrows-right{
-	height:30px;
-	width:20px;
+	height:69px;
+	widows: 41px;
 	position: absolute;
 	top:0;
 	bottom:0;
 	margin:auto;
-	background: #000000;
 	left:234px;
+}
+.banner-arrows-right i{
+	font-size:32px;
+	color:#cdd9e3;
 }
 /* banner图结束 */
 /* 小米闪购开始 */
@@ -347,13 +390,12 @@ input{
 	width:1226px;
 	height: 120px;
 	margin:45px auto;
-	background: red;
+	background: skyblue;
 }
 /* 为你推荐开始 */
 .for-you {
 	width:1226px;
 	height:372px;
-	background: skyblue;
 	margin:0 auto;}
 	/* 为你推荐头部 */
 .you-top{
@@ -397,7 +439,7 @@ input{
 	text-align: center;
 }
 .right-box1 i{
-	line-height:23px;
+	line-height:24px;
 	color:#e2e2e2;
 }
 .right-box2 i{
@@ -408,10 +450,68 @@ input{
 .you-bottom{
 	width:1226px;
 	height:calc(100% - 58px);
-	background: pink;
+	overflow: hidden;
 }
 .you-bottom ul{
 	width:calc(1226px * 3);
-	height:
+	height:100%;
+	text-align: center;	
+}
+.you-bottom ul li{
+	width:232px;
+	height:100%;
+	float:left;
+	text-align: center;	
+}
+
+.foot-box{
+	margin-left:0px;
+	margin-right:8px;
+	text-align: center;	
+}
+.foot-box1{
+	margin:0px 8px;
+}
+.foot-box2{
+	margin-right:0px;
+	margin-left:8px
+}
+.foot-box div img{
+	width:140px;
+	height:140px;
+	margin-top:60px;
+	margin-left:40px;
+}
+.foot-box1 div img{
+	width:140px;
+	height:140px;
+	margin-top:60px;
+	margin-left:40px;
+}
+.foot-box2 div img{
+	width:140px;
+	height:140px;
+	margin-top:60px;
+	margin-left:40px;
+}
+.foot-box-text{
+	font-size:16px;
+	color:#888;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	margin-top:220px;
+	margin-left:20px;
+	margin-right:20px;
+}
+.foot-box1-text{
+	font-size:11px;
+	color:#ff6b15;
+	margin-top:15px;
+}
+.foot-box2-text{
+	font-size:14px;
+	color:#969696;
+	margin-top:15px;
 }
 /* 为你推荐结束 */
