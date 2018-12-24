@@ -659,6 +659,10 @@ main{
 	transition: all 0.5s;
 	box-shadow: #e0e0e0 0 5px 20px;
 }
+.commodity-bottom .bottom-right ul .box:nth-child(1):hover .text4{
+	display: block;
+	transition: all 1s;
+}
 .bottom-right ul .box:nth-child(2):hover{
 	transform: translate(0,-3px);
 	transition: all 0.5s;
@@ -834,13 +838,16 @@ main{
 	width:234px;
 	height:73px;
 	background: #FF6700;
+	
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
 	-webkit-line-clamp:2;
+	text-overflow: ellipsis;
 	overflow:hidden;
-	position: absolute;
+	position:absolute;
 	left:0;
 	bottom:0;
+	display:none;
 }
 .commodity-bottom .bottom-right ul li .text5{
 	
