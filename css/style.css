@@ -593,7 +593,7 @@ main{
 	/* 商品展示1头部开始 */
 .commodity-one{
 	width:1226px;
-	height:672px;
+	/* height:672px; */
 	margin:30px auto 0 auto;
 }
 .commodity-top{
@@ -653,15 +653,16 @@ main{
 .commodity-bottom .bottom-right ul .box:nth-child(1){
 	margin-top:0;
 	margin-left:14px;
+	overflow: hidden;
 }
 .commodity-bottom .bottom-right ul .box:nth-child(1):hover{
 	transform: translate(0,-3px);
 	transition: all 0.5s;
 	box-shadow: #e0e0e0 0 5px 20px;
 }
-.commodity-bottom .bottom-right ul .box:nth-child(1):hover .text4{
-	display: block;
-	transition: all 1s;
+.commodity-bottom .bottom-right ul .box:hover div.text4{
+	transform: translateY(-80px);
+	transition: all 0.3s;
 }
 .bottom-right ul .box:nth-child(2):hover{
 	transform: translate(0,-3px);
@@ -696,6 +697,7 @@ main{
 }
 .commodity-bottom .bottom-right ul .box:nth-child(2){
 	margin-top:0;
+	
 }
 .commodity-bottom .bottom-right ul .box:nth-child(3){
 	margin-top:0;
@@ -707,12 +709,15 @@ main{
 .commodity-bottom .bottom-right ul .box:nth-child(5){
 		margin-top:0;
 		margin-left: 14px;
+		overflow: hidden;
 	}
 .commodity-bottom .bottom-right ul .box:nth-child(6){
 	margin-top:0;
+	overflow: hidden;
 }
 .commodity-bottom .bottom-right ul .box:nth-child(7){
 	margin-top:0;
+	overflow: hidden;
 }
 .commodity-bottom .bottom-right ul .box:nth-child(8){
 	margin-top:0;
@@ -835,22 +840,32 @@ main{
 	color:#b0b0b0;
 }
 .commodity-bottom .bottom-right ul li .text4{
-	width:234px;
+	width:214px;
 	height:73px;
 	background: #FF6700;
-	
+	padding-left:20px ;
+	margin-top: 30px;
+}
+.commodity-bottom .bottom-right ul li .text4 div{
+	height:40px;
+	width:100%	;
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
-	-webkit-line-clamp:2;
 	text-overflow: ellipsis;
 	overflow:hidden;
 	position:absolute;
 	left:0;
-	bottom:0;
-	display:none;
+	text-align: left;
+	font-size: 16px;
+	margin-left:14px ;
 }
-.commodity-bottom .bottom-right ul li .text5{
-	
+.commodity-bottom .bottom-right ul li div .text5{
+	color:rgba(255,255,255,0.6);
+	font-size: 12px;
+	text-align:left;
+	margin-top: 45px;
+	height:33px;
+	width:214px;
 }
 	/* 商品展示1头部结束 */
 	/* 商品展示1结束 */
@@ -1282,3 +1297,180 @@ main{
 	box-sizing: border-box;
 }
 /* 视频结束 */
+/* foot on */
+.foot{
+	width:100%;
+	height:271px;
+	text-align: center;
+	margin-top: 100px;
+}
+.foot-floor1{
+	width:1226px;
+	height:80px;
+	margin: 0 auto;
+}
+.foot-floor1>ul{
+	width:1226px;
+	height:80px;
+	border-bottom:1px solid #c0c0c0 ;
+}
+.foot-floor1>ul>li{
+	width:242.75px;
+	height:25px;
+	float: left;
+	line-height: 25px;
+	margin-top:28.5px;
+	border-right:1px solid #c0c0c0 ;
+	color:#c0c0c0;
+	font-size: 16px;
+}
+.foot-floor1>ul>li:last-child{
+	border:none;
+}
+.foot-floor2{
+	width:1226px;
+	height:192px;
+	margin: 0 auto;
+	padding: 40px 0;
+	box-sizing: border-box;
+}
+.foot-floor2>ul{
+	width:1226px;
+	height:192px;
+}
+.foot-floor2>ul>li{
+	width:160px;
+	height:112px;
+	float: left;
+}
+.foot-floor2>ul>li:nth-child(7){
+	width:240px;
+	height:112px;
+	border-left: 1px solid #c0c0c0;
+	margin-left:15px ;
+}
+.foot-floor2>ul>li>div{
+	width:100%;
+	height:22.5px;
+	margin: -1px 0 5px;
+	color:#757575;
+	}
+	.foot-floor2>ul>li>div:first-child{
+		width:100%;
+		height:30px;
+		color:#333;
+	}
+	.foot-floor2>ul>li:last-child>div:last-child{
+		color:#ff6700; 
+		border: 1px solid #FF6700;
+		width:30%;
+		margin: 0 auto;
+	}
+	.foot-bottom{
+		width:1226px;
+		height:200px;
+		margin: 0 auto;
+		position: relative;
+	}
+.foot-bottom-floor1{
+	width:1226px;
+	height:121px;
+}
+.foot-bottom-floor1>.img{
+	width:57px;
+	height:57px;
+	float: left;
+}
+.foot-bottom-floor1> img{
+	width:57px;
+	height:57px;
+}
+.foot-bottom-floor1>.right{
+	/* width:883.5px; */
+	height:88.5px;
+	margin-left:67px ;
+}
+.foot-bottom-floor1>.right>.floor1>a{
+	color:#757575;
+	font-size:12px;
+	border-right:1px solid #ff757575;
+	padding-right:5px;
+	box-sizing: border-box;
+}
+.foot-bottom-floor1>.right>.floor1>a:last-child{
+	border: none;
+}
+.foot-bottom-floor1>.right>.floor2{
+	width:620px;
+	height:calc(100% - 88.5px)
+}
+.foot-bottom-floor1>.right>.floor2>a{
+	font-size: 12px;
+	color:#b0b0b0;
+	line-height: 18px;
+}
+.last{
+	width:267px;
+	height:20px ;   
+	margin: 60px auto 0;
+	/* font-size: 12px; */
+	color: #333;
+}
+.foot-img{
+	width:87px;
+	height:20px;
+	position: absolute;
+	right:0;
+	bottom:50px;
+}
+.foot-img1{
+	width:87px;
+	height:20px;
+	position: absolute;
+	right:97px;
+	bottom:50px;
+}
+.foot-img2{
+	width:87px;
+	height:20px;
+	position: absolute;
+	right:194px;
+	bottom:90px;
+}
+.foot-img3{
+	width:87px;
+	height:20px;
+	position: absolute;
+	right:97px;
+	bottom:90px;
+}
+.foot-img4{
+	width:87px;
+	height:20px;
+	position: absolute;
+	right:0px;
+	bottom:90px;
+}
+.foot-img img{
+	width:100%;
+	height:100%;
+	}
+.foot-img1 img{
+	width:100%;
+	height:100%;
+}
+.foot-img2 img{
+	width:100%;
+	height:100%;
+}
+.foot-img3 img{
+	width:100%;
+	height:100%;
+	}
+.foot-img4 img{
+	width:100%;
+	height:100%;
+	}
+			
+
+/* foot off */

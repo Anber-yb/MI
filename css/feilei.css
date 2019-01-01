@@ -1,0 +1,300 @@
+body{
+	background: #f5f5f5;
+}
+.floor1{
+	width: 100vw;
+	height:40px;
+	background: #f5f5f5;
+}
+.floor1-1{
+	width:1226px;
+	height:40px;
+	margin: 0 auto;
+	font-size:12px;
+	color:#616161;
+	line-height: 40px;
+}
+.floor2{
+	width: 100vw;
+	height:127px;
+	background: #fff;
+}
+.floor2-1{
+	width:1226px;
+	height:127px;
+	margin: 0 auto;
+	padding: 18px 0;
+	box-sizing: border-box;
+}
+.floor2-1-1{
+	width:100%;
+	height:50%;
+	border-bottom: 1px solid #c0c0c0;
+}
+.floor2-1-1 span{
+	font-size: 12px;
+	line-height: 45px;
+	margin-right: 90px;
+}
+.floor2-1-2 span{
+	font-size: 12px;
+	line-height: 45px;
+	margin-right: 90px;
+}
+.floor3{
+	width:100vw;
+	height:1068px;
+	background:#f5f5f5;
+	padding-top: 20px;
+	padding-bottom: 100px;
+	box-sizing: border-box;
+}
+.floor3-1{
+	width:1226px;
+	height:20px;
+	background:#f5f5f5;	
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.floor3-1-1{
+	width:50%;
+	height:20px;
+	background:#f5f5f5;	
+	margin: 0 auto;
+	float: left;
+	
+
+}
+.floor3-1-1>ul{
+	width:383px;
+	height:20px;
+
+}
+.floor3-1-1>ul>li{
+	/* width:80.05px; */
+	height:18.8px;
+	float: left;
+	font-size: 12px;
+	padding: 0 30px;
+	border-right: 1px solid #e0e0e0;
+}
+.floor3-1-1>ul>li:nth-child(1){
+	padding-left: 0;
+}.floor3-1-1>ul>li:nth-child(4){
+	border: none;
+}
+.floor3-1-2{
+	width:50%;
+	height:20px;
+	float: right;
+}
+.floor3-1-2>ul{
+	width:100%;
+	height:20px;
+	/* margin-top: 20px;
+	margin-bottom: 20px; */
+}
+.floor3-1-2>ul>li{
+	/* width:20%; */
+	height:20px;
+	float: left;
+	font-size: 12px;
+	padding: 0 50px;
+	}
+.floor3-1-2>ul>li:nth-child(1){
+	margin-left: 120px;
+	}
+	.floor3-1-2>ul>li:nth-child(3){
+		padding-right: 0;
+	}
+.floor3-2{
+	width:1226px;
+	height:888px;
+	margin: 0 auto;
+}
+.floor3-2>div{
+	width:295px;
+	height:430px;
+	background: #fff;
+	margin: 0 11px 11px 0;
+	padding-top: 47px;
+	float: left;
+}
+.floor3-2>div>.floor3-1{
+	width:200px;
+	height:200px;
+	margin: 0 auto;
+}
+.floor3-2>div>.floor3-1 img{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+.floor3-2>div>.floor3-2{
+	width:100%;
+	height:22.5px;
+	margin: 44px auto 0 auto;
+	text-align: center;
+	font-size: 14px;
+	color:#333;
+}
+.floor3-2>div>.floor3-3{
+	width:100%;
+	height:22.5px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 14px;
+	color:#ff6700;
+	margin-bottom: 15px;
+}
+.floor3-2>div>.floor3-4{
+	width:100%;
+	height:36px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 14px;
+	color:#ff6700;
+}
+.floor3-2>div>.floor3-4>div{
+	width:36px;
+	height:36px;
+	margin-left:115px;
+	float: left;
+	border: 1px solid #c0c0c0;
+}
+.floor3-2>div>.floor3-4>div img{
+	width: 33px;
+	height:34px;
+	margin: 0;
+}
+.floor3-2>div>.floor3-5{
+	width:100%;
+	height:20px;
+	margin: 0 auto;
+	/* text-align: center; */
+	font-size: 14px;
+	color:#fff;
+	margin-top: 23px;
+	background: skyblue;
+	padding: 0 15px;
+	line-height: 20px;
+}
+.floor4{
+	width:1226px;
+	height:400px;
+	background: #f5f5f5;
+	margin: 0 auto;
+}
+/* 为你推荐开始 */
+.for-you {
+	width:1226px;
+	height:372px;
+	margin:0 auto;}
+	.for-you .you-bottom ul li:hover{
+		transform: translate(0,-5px);
+		transition: all 0.5s;
+		box-shadow: #e0e0e0 0 5px 20px;
+	}
+	/* 为你推荐头部 */
+.you-top{
+	width:1226px;
+	height:58px;
+	margin:0 auto;
+	}
+.you-top .top-center{
+	height:1px;
+	width:450px;
+	float: left;
+	background:#757575 ;
+	margin-top: 30px;
+	}
+.you-top .top-right{
+	height:1px;
+	width:450px;
+	float: right;
+	background:#757575 ;
+	margin-top: 30px;
+	}
+.you-top .top-left{
+	width:200px;
+	height:58px;
+	line-height: 58px;
+	font-size: 30px;
+	color:#757575;
+	text-align: center;
+	float: left;
+	margin-left: 60px;
+	
+}
+
+	/* 为你推荐头部结束 */
+.you-bottom{
+	width:1226px;
+	height:calc(372px - 58px);
+	overflow: hidden;
+}
+.you-bottom ul{
+	width:calc(1226px * 3);
+	height:100%;
+	text-align: center;	
+}
+.you-bottom ul li{
+	width:232px;
+	height:100%;
+	float:left;
+	text-align: center;	
+	background: #fff;
+}
+
+.foot-box{
+	margin-left:0px;
+	margin-right:8px;
+	text-align: center;	
+}
+.foot-box1{
+	margin:0px 8px;
+}
+.foot-box2{
+	margin-right:0px;
+	margin-left:8px
+}
+.foot-box div img{
+	width:140px;
+	height:140px;
+	margin-top:60px;
+	margin-left:40px;
+}
+.foot-box1 div img{
+	width:140px;
+	height:140px;
+	margin-top:60px;
+	margin-left:40px;
+}
+.foot-box2 div img{
+	width:140px;
+	height:140px;
+	margin-top:60px;
+	margin-left:40px;
+}
+.foot-box-text{
+	font-size:16px;
+	color:#888;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	margin-top:220px;
+	margin-left:20px;
+	margin-right:20px;
+}
+.foot-box1-text{
+	font-size:11px;
+	color:#ff6b15;
+	margin-top:15px;
+}
+.foot-box2-text{
+	font-size:14px;
+	color:#969696;
+	margin-top:15px;
+}
+/* 为你推荐结束 */
