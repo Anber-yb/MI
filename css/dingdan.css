@@ -28,7 +28,6 @@ body {
 .cont-left {
 	width: 234px;
 	height: 1000px;
-	margin-left: 14px;
 	background: #fff;
 	float: left;
 }
@@ -37,6 +36,8 @@ body {
 	width: 234px;
 	height: 1000px;
 	padding: 36px 0;
+	margin-left: 14px;
+
 }
 
 .cont-left-1>div {

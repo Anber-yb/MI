@@ -1,0 +1,168 @@
+body{
+	background: #f9f9f9;
+}
+/* 底部 */
+.bottom{
+	width:100vw;
+	height:80px;
+	margin-top: 80px;
+}
+.bottom-box{
+	width:1226px;
+	height: 100%;
+	margin: 0 auto;
+}
+.bottom-box-1{
+	width:100%;
+	height:20px;
+	display: flex;
+	justify-content: center;
+}
+
+.bottom-box-1>div{
+	padding:0 10px;
+	border-right: 1px solid #757575;
+	color:#757575;
+	font-size: 14px;
+	}
+.bottom-box-2{
+	padding:10px;
+	display: flex;
+	justify-content: center;
+}
+/* 底部结束 */
+/* 楼层开始 */
+.top{
+	width: 100vw;
+	height: 549px;
+	background: #f9f9f9;
+	margin-top:50px ;
+}
+.top-con{
+	width:854px;
+	height: 100%;
+	margin: 0 auto;
+	background: #fff;
+	padding: 0 34px;
+	text-align: center;
+}
+.top-con img{
+	margin-bottom: 40px;
+}
+.top-con .main1{
+	font-size: 30px;
+	color: #333;
+}
+.top-con .main2{
+	width: 332px;
+	font-size: 14px;
+	color: #333;
+	margin: 0 auto;
+	text-align: left;
+}
+.top-con .main2 a{
+	width: 100%;
+	height: 40px;
+	padding-left: 10px;
+	border: 1px solid #e0e0e0;
+	box-sizing: border-box;
+	position: relative;
+	display: block;
+	margin-top: 5px;
+}
+.top-con .main2 input{
+	width: 282px;
+	height: 100%;
+	background: #fff;
+	border: none;
+}
+.top-con .main2 .box{
+	width: 30px;
+	height: 40px;
+	font-size: 16px;
+	text-align: center;
+	line-height: 40px;
+	right: 0;
+	top: 0;
+	position: absolute;
+	color: #e0e0e0;
+	border-left: 1px solid #e0e0e0;
+	box-sizing: border-box;
+}
+.top-con .main2>div:nth-child(3){
+	color: #666;
+}
+.top-con .main3{
+	width: 332px;
+	font-size: 14px;
+	color: #333;
+	text-align: left;
+	margin: 15px auto;
+
+}
+.top-con .main3 .box{
+	width: 332px;
+	height: 40px;
+	border: 1px solid #e0e0e0;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	margin-top: 5px;
+}
+.top-con .main3 .box-left{
+	width: 72px;
+	height: 100%;
+	padding: 0 9px;
+	box-sizing: border-box;
+	line-height: 40px;
+	border-right: 1px solid #e0e0e0;
+	text-align: center;
+}
+.top-con .main3 .box-left i{
+	font-size: 12px;
+	vertical-align: middle;
+	margin-left: 7px;
+}
+.top-con .main3 .box-left a{
+	color: #666;
+}
+.top-con .main3 .box-right input{
+	border: none;
+	outline: none;
+	margin-left: 6px;
+}
+.top-con .main4{
+	width: 332px;
+	height: 40px;
+	background: #ff6700;
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	line-height: 40px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 80px;
+	position: relative;
+}
+.top-con .main4 .box{
+	width: 332px; height: 40px; background: rgba(255,255,255,0.4); left: 0; top: 0; position: absolute; display: none;"
+}
+.top-con .main4:hover .box{
+	display: block;
+}
+.top-con .main5{
+	font-size: 14px;
+	height: 30px;
+	margin: 0 auto;
+}
+.top-con .main5 a{
+	display: flex;
+	justify-content: center;
+	color: #999;
+}
+.top-con .main5 span{
+	color: #333;
+	font-weight: bold;
+}
+/* 楼层结束 */
