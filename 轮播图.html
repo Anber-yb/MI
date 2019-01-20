@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/base.css">
+
+		<title></title>
+	</head>
+	<style>
+		.box{
+			width:250px;
+			height:300px;
+			background: #707070;
+			margin: 0 auto;
+		}
+		.top{
+			height: 50px;
+			width: 100%;
+			font-size: 30px;
+			line-height: 50px;
+			text-align: center;
+		}
+		.middle{
+			width: 100%;
+			height: 200px;
+			position: relative;
+			overflow: hidden;
+
+		}		
+		.middle ul{
+			width: 300%;
+			height: 100%;
+			position:relative;
+			left:0;
+			right:0;
+			transition:all 0.3s;
+
+		}
+		.middle ul li{
+			width:33.33333%;
+			height: 100%;
+			float: left;
+		}
+		.middle ul li:nth-child(1){
+			background: lightcyan;
+		}
+		.middle ul li:nth-child(2){
+			background: skyblue;
+		}
+		.middle ul li:nth-child(3){
+			background: pink;
+		}
+		.middle>div{
+			width:20px;
+			height: 30px;
+			position:absolute ;
+			top:0;
+			bottom: 0;
+			margin:auto 0;
+			background: #333333;
+			text-align: center;
+			line-height: 30px;
+			display: none;
+			color:#fff;
+			cursor: pointer;
+
+		}
+		.box:hover .middle>div{
+			display: block;
+		}
+		.left{
+			left:0;
+		}
+		.right{
+			right:0;
+		}
+		.bottom{
+			width: 100%;
+			height:50px;
+			text-align: center;
+			line-height: 50px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+		}
+		.bottom>div{
+			width:20px;
+			height: 20px;
+			border-radius:50% ;
+			box-sizing: border-box;
+			background: #fff;
+			margin-left:10px ;
+			cursor: pointer;
+}
+		.bottom .active{
+			border: 2px solid #ff6700;
+			background: #333;
+		}
+.bottom>div:first-child{
+	margin-left:0;
+}
+	</style>
+	<body>
+		<div class="box">
+			<div class="top">图书</div>
+			<div class="middle">
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<div class="left"> < </div>
+				<div class="right"> > </div>	
+			</div>
+			<div class="bottom">
+				<div class="active"></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+		<script>
+			let box = document.querySelector(".middle ul")
+			let leftBtn = document.querySelector(".left");
+			let rightBtn = document.querySelector(".right");
+			let yuans = document.querySelectorAll(".bottom div");
+			let n = 0;
+			let size = yuans.length-1;
+		rightBtn.onclick=function(){
+		n++;
+		move();
+		}
+			leftBtn.onclick=function(){
+			n--;
+			move();
+		}
+		function move(){
+				if(n>size){
+					n=0;
+				}
+				if(n<0){
+					n=size;
+					}
+				box.style.left=-n*250+"px";
+				if(n==size){
+					rightBtn.style.cursor="default";
+				}
+					else{
+						rightBtn.style.cursor="pointer";
+					}
+				if(n==0){
+					leftBtn.style.cursor="default";
+				}
+				else{
+					leftBtn.style.cursor="pointer";
+				}
+			yuans.forEach(function(val,index){
+				val.classList.remove("active");
+				val.style.cursor="pointer";
+			})
+				yuans[n].classList.add("active");
+				yuans[n].style.cursor="default";
+		}
+			yuans.forEach(function(val,index){
+				val.onclick=function(){
+					n=index;
+					move();
+				}
+			})
+		</script>
+	</body>
+</html>

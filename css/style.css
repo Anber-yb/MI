@@ -640,6 +640,20 @@ main{
 	width:calc(100% - 234px);
 	height:100%;
 	float:left;
+	position: relative;
+	overflow: hidden;
+}
+.commodity-bottom .bottom-right-3bei{
+	width:100%;
+	height: 100%;
+
+}
+.commodity-bottom .bottom-right-3bei ul{
+	width:100%;
+	height:100%;
+	position: absolute;
+	left: 0;
+	top: 0;
 }
 .commodity-bottom .bottom-right ul li{
 	width:234px;
@@ -648,7 +662,7 @@ main{
 	margin:7px 7px;
 	text-align: center;
 	background: #fff;
-	position: relative;
+
 }
 .commodity-bottom .bottom-right ul .box:nth-child(1){
 	margin-top:0;
@@ -684,7 +698,6 @@ main{
 	transition: all 0.5s;
 	box-shadow: #e0e0e0 0 5px 20px;
 }
-	
 .bottom-right ul .box:nth-child(6):hover{
 	transform: translate(0,-3px);
 	transition: all 0.5s;
@@ -889,11 +902,7 @@ main{
 	.furniture-top .top-right span{
 		margin:0 16px ;
 	}
-	.furniture-top .top-right .first{
-		color:#ff6700;
-		border-bottom:2px solid #ff6700 ;
-		box-sizing: border-box;
-	}
+
 	.furniture-top .top-right .four{
 		margin-right:0;
 	}
@@ -1296,6 +1305,101 @@ main{
 	box-sizing: border-box;
 }
 /* 视频结束 */
+/* 响应式开始 */
+body{
+	position: relative;
+}
+.xiangyingshi{
+	width:84px;
+	height: 470px;
+	position: fixed;
+	right:0;
+	bottom:50px;
+	display: none;
+}
+.xiangyingshi-top{
+	width:100%;
+	height:365px;
+}
+.xiangyingshi-top ul{
+	width:100%;
+	height:100%;
+	background: #fff ;
+}
+.xiangyingshi-top ul li{
+	width:100%;
+	height:25%;
+	border-bottom: 1px solid #E0FFFF;
+}
+.xiangyingshi-top ul li img{
+	width:30px;
+	height:30px;
+	margin: 10px auto;
+}
+.xiangyingshi-top ul li:last-child{
+	border: none;
+}
+.xiangyingshi-bottom{
+	width:100%;
+	height:calc(100% - 365px);
+	margin-top: 30px;
+	height:91px;
+	display: none;
+
+}
+.xiangyingshi-bottom a{
+	width:100%;
+
+}
+.xiangyingshi-bottom img{
+	width:30px;
+	height:30px;
+	margin: 10px auto;
+}
+/* 响应式结束 */
+/* 小响应式开始 */
+.small-xys{
+	width:40px;
+	height:200px;
+	position: fixed;
+	bottom:50px;
+	left:50%;
+	transform: translateX(613px);
+	display: none;
+}
+.small-xys>ul{
+	width:100%;
+	height: 100%;
+	background: #fff;
+	}
+.small-xys>ul>li{
+	width:100%;
+	height: 20%;
+	border-bottom: 1px solid #E0FFFF;
+}
+.small-xys>ul>li:last-child{
+	display: none;
+}
+.small-xys>ul>li img{
+	width: 20px;
+	height: 20px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.small-xys>ul>li:last-child{
+	margin-top:5px ;
+}
+ @media only screen and (min-width:1500px ) {
+            .xiangyingshi{
+							display: block;
+            }
+        }
+ @media only screen and (max-width:1500px ) {
+            .small-xys{
+							display: block;
+            }
+        }
+/* 小响应式结束 */
 /* foot on */
 .foot{
 	width:100%;
@@ -1473,3 +1577,9 @@ main{
 			
 
 /* foot off */
+.active{
+		color:#ff6700;
+		border-bottom:2px solid #ff6700 ;
+		box-sizing: border-box;
+		cursor: pointer;
+}

@@ -42,12 +42,83 @@
 	overflow-y: auto;
 	float: left;
 }
-.main-1-left img{
-	width: 560px;
-	height:560px;
+.left-box{
+	width:560px;
+	height: 560px;
+	position: relative;
+}
+.left-box>div{
+	width:100%;
+	height: 100%;
 	position: absolute;
-	left:20px;
-	top:20px;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	z-index: 10;
+}
+.foot-bottom-box{
+	width:100%;
+	height:2px;
+	position:absolute;
+	bottom:0;
+	left: 0;
+	z-index: 99;
+}
+.foot-bottom-box>ul{
+	width:100%;
+	height:100%;
+	display: flex;
+	justify-content: center;
+
+}
+.foot-bottom-box>ul>li{
+	width:50px;
+	height:2px;
+	margin-right: 10px;
+	background: #e0e0e0;
+	cursor: pointer;
+}
+.main-1-left .active{
+	opacity: 1;
+	transition: all 1s;
+}
+.foot-bottom-box>ul>li:hover{
+	background: #757575;
+}
+.foot-bottom-box>ul>li:last-child{
+	margin: 0;
+	}
+.foot-bottom-box .fff{
+	background: #757575;
+}
+.main-1-left img{
+	width: auto;
+	height:100%;
+}
+.jiantou{
+	z-index:122;
+	opacity: 1;
+}
+.jiantou>div{
+	width:30px;
+	height:60px;
+	color:#757575;
+	font-size: 30px;
+	position: absolute;
+	top:50%;
+	transform: transitionY(-50%);
+	text-align: center;
+	cursor: pointer;
+	line-height:60px;
+	z-index: 133;
+	opacity: 1;
+}
+.jiantou>div:hover{
+	background:#757575;
+	color: #fff;
+}
+.jiantou>div:last-child{
+	right: 0;
 }
 .main-1-right{
 	width:50%;
